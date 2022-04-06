@@ -25,9 +25,10 @@ public class Planet{
 		r=Math.sqrt(dx*dx+dy*dy);
 		return r;
 	}
-
-	static final double G=6.67E-11;
+	
+	private static double G=6.67E-11;
 	public double calcForceExertedBy(Planet b2){
+
 		double r=this.calcDistance(b2);
 		double f=G*this.mass*b2.mass/(r*r);
 		return f;
