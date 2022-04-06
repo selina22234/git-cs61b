@@ -7,13 +7,12 @@ public class InDemo {
 
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			System.out.println("Please supply a country as a command line argument.");
-			System.out.println("For countries with spaces, use an underscore, e.g. South_Korea");
-			/* NOTE: Please don't use System.exit() in your code.
-			   It will break the autograder. */
-			System.exit(0);
-		}	
-
+					System.out.println("Please supply a country as a command line argument.");
+					System.out.println("For countries with spaces, use an underscore, e.g. South_Korea");
+					/* NOTE: Please don't use System.exit() in your code.
+					   It will break the autograder. */
+					System.exit(0);
+				}	
 		/* Start reading in national_salt_production.txt */
 		In in = new In("national_salt_production.txt");
 		
